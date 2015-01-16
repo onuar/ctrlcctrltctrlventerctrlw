@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "ctrlcctrltctrlventerctrlw",
+  "description": "we hate link in plain-text",
+  "version": "1.0",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [ "tabs", "http://*.google.com/", "background" ],
+
+  "content_scripts": [{
+    "js": [ "jquery-2.0.3.min.js", "content.js" ],
+    "matches": [ "http://*/*", "https://*/*" ]
+    }],
+
+    "web_accessible_resources": [ "jquery-2.0.3.min.map" ],
+
+    "options_page": "options.html"
+  }
