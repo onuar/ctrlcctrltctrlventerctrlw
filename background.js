@@ -1,7 +1,7 @@
 chrome.extension.onMessage.addListener(function(request) {
   var isWebAddress = isThatAWebSite(request.url);
   if (isWebAddress) {
-    chrome.tabs.create({ url: request.url });
+    chrome.tabs.create({ url: "http://" + request.url });
   }else{
     chrome.tabs.create({ url: "http://www.google.com/?#q=" + request.url });
   }
@@ -9,5 +9,5 @@ chrome.extension.onMessage.addListener(function(request) {
 });
 
 function isThatAWebSite(url){
-  return url.match(/^(ht|f)tps?:\/\/[a-z0-9-\.]+\.[a-z]{2,4}\/?([^\s<>\#%"\,\{\}\\|\\\^\[\]`]+)?$/);
+  return url.match(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/);
 }
