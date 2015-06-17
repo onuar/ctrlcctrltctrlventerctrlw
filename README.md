@@ -1,2 +1,7 @@
 # ctrlcctrltctrlventerctrlw
-ctrl c ctrl t ctrl v enter ctrl w
+**select keyword in a web** 
+ctrl c 
+ctrl t 
+ctrl v 
+enter 
+ctrl w
