@@ -6,7 +6,8 @@ $(document).ready(function() {
 
     var selection = window.getSelection();
     var text = selection.toString().trim();
-
-    chrome.extension.sendMessage( { url: text } );
+    if(text){
+      chrome.extension.sendMessage( { url: text } );
+    }
   });
 });
