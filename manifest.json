@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "ctrlcctrltctrlventerctrlw",
   "description": "we hate link in plain-text",
-  "version": "1.0",
+  "version": "1.1",
 
   "background": {
     "scripts": ["background.js"]
