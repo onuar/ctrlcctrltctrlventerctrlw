@@ -7,14 +7,14 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "permissions": [ "tabs", "http://*.google.com/", "background" ],
+  "permissions": ["tabs", "http://*.google.com/", "background"],
 
   "content_scripts": [{
-    "js": [ "jquery-2.0.3.min.js", "content.js" ],
-    "matches": [ "http://*/*", "https://*/*" ]
-    }],
+    "js": ["jquery-2.0.3.min.js", "content.js"],
+    "matches": ["http://*/*", "https://*/*"]
+  }],
 
-    "web_accessible_resources": [ "jquery-2.0.3.min.map" ],
+  "web_accessible_resources": ["jquery-2.0.3.min.map"],
 
-    "options_page": "options.html"
-  }
+  "options_page": "options.html"
+}
